@@ -7,7 +7,7 @@
     <title>DOM</title>
     <style>
         body{ 
-            background-color: aqua;
+            background-color: rgb(44, 148, 148);
             font-family: Arial, Helvetica, sans-serif;
             
         }
@@ -26,7 +26,7 @@
     <h1>Iniciando DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Usando o <strong>DOM</strong></p>
-    <div>Clique em mim</div>
+    <div id="msg">  Clique em mim</div>
     <script>
         //Document Object Model - DOM
         /*
@@ -38,9 +38,15 @@
        var corpo = window.document.body
        var fonte = window.document.body
        var p1 = window.document.getElementsByTagName('p')[0]
-       p1.style.color = 'blue'
-       corpo.style.background = 'black'
-       fonte.style.color = 'white'
+       /*
+       var d = window.document.getElementById('msg')
+       window.document.getElementById('msg').innerText = 'Olá'
+       var d = window.document.getElementsByName('msg')[0]
+       d.innerText = 'Olá.....'
+       */
+      var d = window.document.querySelector('div#msg')
+      d.style.color = 'blue'
+
 
     </script>
     
