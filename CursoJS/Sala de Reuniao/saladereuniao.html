@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sala de Reunião</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+h1 {
+
+text-align: left;
+font-family: 'Montserrat'; 
+margin: 10px;
+
+}
+
+h1#us {
+    text-align: left;
+    font-size: 16px;
+    
+    
+}
+
+table {
+    vertical-align: left;
+    text-align: center;
+    background-color: #8191c37e;
+    margin-left: inherit;
+    margin-bottom: 15px;
+    border-radius: 10px 10px; 
+    padding: 10px;            
+}
+tr {
+    margin: auto;
+    vertical-align: middle;
+    text-align: center;
+}
+td {
+    vertical-align: middle;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    margin: auto;
+    padding: 10px;        
+}
+
+#top {
+    
+    color:  #1515167e;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    padding-bottom: 5px;
+}
+
+#disp {
+    font-size: 16px;
+    font-weight: lighter;
+    color: #2657e9;
+    text-align: center;
+
+    
+}
+#h {
+    color: #1515167e;
+    text-align: right;
+      
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+input:focus:-moz-placeholder { 
+    color: transparent;  
+}
+input:focus:-moz-placeholder { 
+    color: transparent;  
+}
+input:focus:-ms-input-placeholder {  
+    color: transparent;  
+}
+
+footer {
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    text-align: left;
+    margin: 10px;
+}
+
+div#res {
+    text-align: left;
+    font-weight: bolder;
+    font-family: 'Montserrat'; 
+    margin: 10px;
+    background-color: white;
+    color: #1515167e;
+    
+    padding: 5px 5px 5px 5px;
+    
+
+}
+div#reserva {
+    background-color: white;
+    margin: auto;
+    padding: 2px 2px 2px 2px;
+    color: #1515167e;
+    font-family: 'Montserrat'; 
+    font-weight: bolder; 
+    font-style: italic;
+    
+}
+
+
+    </style>
+
+</head>
+<body>
+    <h1>Sala de Reunião</h1>
+    <h1 id="us">Usuário: <input type="text" placeholder="Digite o nome de usuário" id="user" > <input type="button" value="Logar" id="log" onclick="usuario()"></h1>
+    <div id="res"></div>
+    
+    
+    
+    
+    <table>
+        <tr>
+            <td id="top">Horário</td>
+            <td id="top">Segunda</td>
+            <td id="top">Terça</td>
+            <td id="top">Quarta</td>
+            <td id="top">Quinta</td>
+            <td id="top">Sexta</td>            
+        </tr>
+        <tr>
+            <td id="h">06:00</td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+                
+            
+        </tr>
+        <tr>
+            <td id="h">07:00</td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+        </tr>
+        <tr>
+            <td id="h">08:00</td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+        </tr>
+        <tr>
+            <td id="h">09:00</td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+        </tr>
+        <tr>
+            <td id="h">10:00</td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+        </tr><tr>
+            <td id="h">11:00</td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+        </tr><tr>
+            <td id="h">12:00</td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+        </tr><tr>
+            <td id="h">13:00</td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+        </tr><tr>
+            <td id="h">14:00</td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+        </tr><tr>
+            <td id="h">15:00</td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+        </tr><tr>
+            <td id="h">16:00</td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+        </tr><tr>
+            <td id="h">17:00</td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+        </tr><tr>
+            <td id="h">18:00</td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+        </tr>
+        <tr>
+            <td id="h">19:00</td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+        </tr>
+        <tr>
+            <td id="h">20:00</td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+        </tr>
+        <tr>
+            <td id="h">21:00</td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+        </tr>
+        <tr>
+            <td id="h">22:00</td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+        </tr>
+        <tr>
+            <td id="h">23:00</td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+            <td><input id="disp" type="" placeholder="Clique para reservar"></td>
+        </tr>
+    </table>
+    <footer>*Desenvolvido por Ricardo G N.</footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
